@@ -1,0 +1,239 @@
+/* Your custom CSS can go here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+    min-height: 100vh; /* Changed height to min-height for proper centering */
+    background-color: #373636;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 1px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.coverpic img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.profile-card {
+    background-color: #171c34;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff; /* Changed text color to white */
+}
+
+.profile-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc; /* Changed text color to light gray */
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add some space between the card and the buttons */
+}
+
+.action-btn {
+    text-align: center;
+}
+.more-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.more-btns a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Your existing CSS rules here */
+
+/* Your existing CSS rules here */
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.twitter {
+    background: #55acee;
+}
+
+.linkedin {
+    background: #0077b5;
+}
+
+.whatsapp {
+    background: #25d366;
+}
+
+.social-btn i {
+    pointer-events: none;
+}
+
+/* Styling for button labels (span elements) */
+.social-buttons span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.share-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: #FF5C58;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+}
+
+/* Your existing CSS rules here */
+
+.page-info-widget {
+    padding: 20px;
+    background-color: #3b3939;
+    border-radius: 10px;
+}
+
+.info-widget {
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.icon-1 {
+    background: #FFB8301a;
+}
+
+.icon-1 i {
+    color: #FFB830;
+}
+
+.content {
+    flex: 1;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fbf6f6;
+}
+
+h5 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.about-section-four {
+    margin-top: 1px;
+}
+
+.about-section-four h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Basic styling for the container */
+.about-section-widget {
+    background-color: #3b3939;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Styling for the section title */
+.section-title h4 {
+    font-size: 22px;
+    color: #dadada;
+    margin-bottom: 10px;
+}
+
+/* Styling for the paragraph content */
+.about-section-widget p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
