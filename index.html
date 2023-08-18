@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome icons CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/hello.css">
+    <title>Profile Page</title>
+    <script>
+        $(document).ready(function () {
+            // Show the share ring on click
+            $(".share").click(function () {
+                $("<div class='share-ring'></div>").appendTo("body").fadeOut(1500, function () {
+                    $(this).remove();
+                });
+            });
+        });
+        
+    </script>
+    
+</head>
+<body>
+    <div class="container1">
+        <div class="coverpic">
+            <img src="images/coverpic.jpg" alt="coverpic">
+        </div>
+        <div class="profile-card">
+            <img src="images/person5.jpg" alt="Profile Picture">
+            <h2>Sakila Athapaththu</h2>
+            <p>Sakila Athapaththu is a 3rd-year Software Engineering student at SLIIT University.<br> 
+                Skilled in Java, Mern Stack, and C++, with a focus on web development using React and Angular.<br> 
+                A detail-oriented team player with a passion for solving complex problems and delivering high-quality software solutions.</p>
+           
+            <div class="actions">
+                <div class="action-btn">
+                    <a class="btn btn-primary" href="tel:+94714782241"><i class="fas fa-mobile-alt"></i></a>
+                    <br>
+                    <span>Call</span>
+                </div>
+                <div class="action-btn">
+                    <a class="btn btn-success" href="https://wa.me/+94714782241?text=Hello"><i class="fab fa-whatsapp"></i></a>
+                    <br>
+                    <span>Whatsapp</span>
+                </div>
+                <div class="action-btn">
+                    <a class="btn btn-danger" href="mailto:sakila.atapattu@gmail.com"><i class="far fa-envelope"></i></a>
+                    <br>
+                    <span>Mail</span>
+                </div>
+                
+            </div>
+        
+            <div class="more-btns text-center mt-3">
+                <a href="https://hellosakila.000webhostapp.com/contact.vcf" class="add-contact" style="background: #FF5C58"><i class="fas fa-plus"></i> Add to Contact</a>&nbsp;&nbsp;&nbsp;
+                <a href="#" data-toggle="modal" data-target="#socialMediaModal" class="share" style="background: #FF5C58"><i class="fas fa-share-square"></i> Share vCard</a>
+            </div>
+
+            <div class="modal" id="socialMediaModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Share vCard</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                            <div class="modal-body">
+                                <!-- Add your social media share buttons here -->
+                                 <div class="social-buttons">
+                                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://hellosakila.000webhostapp.com/" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                                     <a href="https://twitter.com/intent/tweet?text=https://hellosakila.000webhostapp.com/" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+                                     <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://hellosakila.000webhostapp.com/" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                
+                                     <a class="social-btn whatsapp" href="whatsapp://send?text=https://hellosakila.000webhostapp.com/"><i class="fab fa-whatsapp"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="page-info-widget">
+                <div class="info-widget d-flex align-items-center">
+                    <a href="tel:+94714782241" class="icon icon-1" style="background: #FFB8301a;">
+                        <i class="fas fa-mobile-alt" style="color: #FFB830;"></i>
+                    </a>
+                    <div class="content">
+                        <span class="title">Phone</span>
+                        <h5><a href="tel:+94714782241">+94714782241</a></h5>
+                    </div>
+                </div>
+                <div class="info-widget d-flex align-items-center">
+                    <a href="mailto:sakila.atapattu@gmail.com" class="icon icon-1" style="background: #FFB8301a;">
+                        <i class="fas fa-at" style="color: #FFB830;"></i>
+                    </a>
+                    <div class="content">
+                        <span class="title">Email</span>
+                        <h5><a href="mailto:sakila.atapattu@gmail.com">sakila.atapattu@gmail.com</a></h5>
+                    </div>
+                </div>
+                <div class="info-widget d-flex align-items-center">
+                    <a href="https://goo.gl/maps/bAKVXfR91i7CeirB7" class="icon icon-1" style="background: #FFB8301a;">
+                        <i class="fas fa-map-marker-alt" style="color: #FFB830;"></i>
+                    </a>
+                    <div class="content">
+                        <span class="title">Address</span>
+                        <h5><a href="https://goo.gl/maps/bAKVXfR91i7CeirB7">Rajagedra, Ahugoda, Pothuhera </a></h5>
+                    </div>
+                </div>
+                <div class="info-widget d-flex align-items-center">
+                    <a class="icon icon-1" href="https://blackcodesakila.000webhostapp.com/" target="_blank" style="background: #FFB8301a;">
+                        <i class="fas fa-link" style="color: #FFB830;"></i>
+                    </a>
+                    <div class="content">
+                        <span class="title">Website URL</span>
+                        <h5><a href="https://blackcodesakila.000webhostapp.com/" target="_blank">https://blackcodesakila.000webhostapp.com/</a></h5>
+                    </div>
+                </div>
+                <div class="info-widget d-flex align-items-center">
+                    <a class="icon icon-1" href="https://www.facebook.com/sakila.atapattu/" target="_blank">
+                        <i class="fab fa-facebook" style="color: #2337FF"></i>
+                    </a>
+                        <div class="content">
+                            <span class="title">Facebook</span>
+                            <h5><a target="_blank" href="https://www.facebook.com/sakila.atapattu/">https://www.facebook.com/sakila.atapattu/</a></h5>
+                        </div>
+                </div>
+                <div class="info-widget d-flex align-items-center">
+                    <a class="icon icon-1" href="https://youtube.com/@hellocard-cp7gu" target="_blank">
+                        <i class="fab fa-youtube" style="color: #FF2117"></i>
+                    </a>
+                    <div class="content">
+                        <span class="title">YouTube</span>
+                        <h5><a target="_blank" href="https://youtube.com/@hellocard-cp7gu">https://youtube.com/@hellocard-cp7gu</a></h5>
+                    </div>
+                </div>
+                <!-- <div class="info-widget d-flex align-items-center">
+                     <a class="icon icon-1" href="https://www.tiktok.com/@_sakila12_?_t=8eEE2wTHxMw&_r=1" target="_blank">
+                        <i class="far fa-play-circle" style="color: #000000"></i>
+                    </a>
+                        <div class="content">
+                            <span class="title">TikTok</span>
+                            <h5><a target="_blank" href="https://www.tiktok.com/@_sakila12_?_t=8eEE2wTHxMw&_r=1">https://www.tiktok.com/@_sakila12_?_t=8eEE2wTHxMw&_r=1</a></h5>
+                        </div>
+                </div>-->
+                <div class="info-widget d-flex align-items-center">
+                    <a class="icon icon-1" href="https://www.instagram.com/__s_a_k_i_l_a__/=" target="_blank">
+                         <i class="fab fa-instagram" style="color: #FF3CB6"></i>
+                    </a>
+                        <div class="content">
+                            <span class="title">Instagram</span>
+                            <h5><a target="_blank" href="https://www.instagram.com/__s_a_k_i_l_a__/=">https://www.instagram.com/__s_a_k_i_l_a__/=</a></h5>
+                        </div>
+                </div>
+                <div class="info-widget d-flex align-items-center">
+                    <a class="icon icon-1" href="https://www.linkedin.com/in/sakila-athapaththu-412647215/" target="_blank">
+                        <i class="fab fa-linkedin" style="color: #0E5CFF"></i>
+                    </a>
+                    <div class="content">
+                        <span class="title">LinkedIn</span>
+                        <h5><a target="_blank" href="https://www.linkedin.com/in/sakila-athapaththu-412647215/">https://www.linkedin.com/in/sakila-athapaththu-412647215/</a></h5>
+                    </div>
+                </div>
+            </div> 
+            <div class="about-section-widget about-section-four">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h4>About me</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>I am Sakila Athapaththu, a 3rd-year Software Engineering student at SLIIT University.<br>
+                    Skilled in Java, Python, and C++, I have a strong foundation in software development and a passion for technology.<br>
+                    Proficient in web development using HTML, CSS, and JavaScript, I excel in creating dynamic and user-friendly applications.<br> 
+                    With expertise in React and Angular, I focus on delivering exceptional user experiences. Additionally,<br> I have experience in database management and software testing. 
+                    A collaborative and detail-oriented problem solver,<br> I aspire to contribute to innovative projects and make a positive impact in the tech industry.</p>
+                </div>
+            </div>
+            <div class="about-section-widget about-section-four">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h4>Skills</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>1. Programming Languages: Proficiency in one or more programming languages such as Python,<br> Java, C++, JavaScript etc. This is a fundamental skill for software development.<br>
+
+                        2.Software Development: Knowledge of software development methodologies, including Agile,<br> Scrum, Waterfall, and the ability to follow best practices for software design and implementation.<br>
+                        
+                        3.Data Structures and Algorithms: Understanding of fundamental data structures (lists,<br> trees, graphs, etc.) and algorithms (sorting, searching, etc.) to solve complex problems efficiently.<br>
+                        
+                        4.Web Development: Knowledge of front-end technologies (HTML, CSS, JavaScript, etc.)<br> and back-end technologies (Node.js, PHP, etc.) for building web applications.<br>
+                        
+                        5.Object-Oriented Design (OOD) and Object-Oriented Programming (OOP): Skills in designing<br> and implementing software using OOD principles and patterns.<br>
+                        
+                        6.Databases: Familiarity with relational databases (MySQL,  etc.) and NoSQL databases<br> (MongoDB, firebase, etc.) to store and manage data.</p>
+                </div>
+            </div>
+            <div class="about-section-widget about-section-four">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h4>Projects</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p><a href="https://github.com/Sakilaathapaththu/Restaurant_Management_System.git">1.  Restaurant Management System</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    Tools and Technologies - MERN STACK, MongoDB<br>
+
+                        <a href="https://github.com/Sakilaathapaththu/EasyWorks.git">2. Economy Helper Mobile application (App- Easy Works)</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    Tools and Technologies – Android Studio, Kotlin, Firebase<br>
+                        
+                        <a href="https://github.com/Sakilaathapaththu/OOP_Final_project_Online_Bidding_System.git">3. Online Bidding System</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    Tools and Technologies – JAVA MVC Architecture<br>
+                        
+                        <a href="https://github.com/Sakilaathapaththu/OOP_online_laundry-management_system.git">4. Online Laundry Management System</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     Tools and Technologies – JAVA MVC Architecture<br>
+
+                        <a href="https://github.com/Sakilaathapaththu/OOC_Project.git">5. Online Fitness Trainer Project C++</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     Tools and Technologies – C++<br>
+
+                        <a href="https://github.com/Sakilaathapaththu/1st-website.git">6. Online Fitness Trainer Management System</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    Tools and Technologies – HTML, CSS, JavaScript, PHP, MySQL<br>
+
+                        <a href="https://github.com/Sakilaathapaththu/online_bus_reservation.git">7. Online bus reservation System</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    Tools and Technologies – HTML, CSS, JavaScript, PHP, MySQL<br>
+
+                        <a href="https://github.com/Sakilaathapaththu/online_voting_system.git">8. Online voting system (sponsor details profile and contact us page)</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     Tools and Technologies – HTML, CSS, JavaScript, PHP, MySQL<br>
+
+                        <a href="https://github.com/Sakilaathapaththu/Textile_Garment_management_System.git">9. Textile garment management system (CRUD operations)</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    Tools and Technologies – HTML, CSS, JavaScript, PHP, MySQL<br>
+
+                        <a href="https://github.com/Sakilaathapaththu/Online_Airline_Ticket_Reservation.git">10. Online airline ticket reservation (CRUD operations)</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     Tools and Technologies – HTML, CSS, JavaScript, PHP, MySQL<br>
+
+                        <a href="https://github.com/Sakilaathapaththu/Online_property_sales_system.git">11. Online property sales system (CRUD operations)</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     Tools and Technologies – HTML, CSS, JavaScript, PHP, MySQL<br>
+                        
+                        </p>
+                </div>
+            </div>
+
+            <div class="about-section-widget about-section-four">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h4>Certifications</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>1. Cisco Networking Academy<a href="https://drive.google.com/file/d/1JAwhscT_FRYSUgyk1ekbYUongjv4OZz0/view?usp=sharing"> Computer Hardware Basics Badge</a><br>
+                        
+
+                        2. IBM<a href="https://drive.google.com/file/d/1LolUhOdQgqr75poN37TtLlU39MfZDcr8/view?usp=sharing"> Introduction to Web Development with HTML, CSS and JavaScript</a><br>
+                        
+                        
+                        3. Cisco Networking Academy<a href="https://drive.google.com/file/d/1EEzptUcLbLaLFIYDv6uxACAuhxdfNt2-/view?usp=sharing"> JavaScript Essentials 1 Badge</a><br>
+                       
+                        
+                        4. IBM<a href="https://drive.google.com/file/d/1s9JEBuqHNO88qcq4HIBaaERafC9BOhTR/view?usp=sharing"> Python for Data Science, AI & Development</a><br>
+                        
+
+                        5. IBM<a href="https://drive.google.com/file/d/1B479TrpkpPnJOotqr0E-j4nDm44ZxZgH/view?usp=sharing"> Developing Back-End Apps with Node.js and Express</a><br>
+                        
+
+                        6. IBM<a href="https://drive.google.com/file/d/1JZlNH6Y1n1pRw2GiMBUift82dF5ZTBdQ/view?usp=sharing"> Developing Front End Apps with React</a><br>
+                       
+
+                        7. Meta<a href="https://drive.google.com/file/d/1d0-l_JD_zZqh2t37LyhD4YQJrywA8USf/view?usp=sharing"> Introduction to Front-End-Development</a><br>
+                        
+
+                        8. University of Moratuwa<a href="https://drive.google.com/file/d/15X41Yw9HYWC_NHoD_pEjKm6xXRhnRB7Q/view?usp=sharing"> Web Design For Beginner</a><br>
+                        
+
+                        9. IBM<a href="https://drive.google.com/file/d/1dZGrF4qQaxJKACrNt-_JhdhBQHvGNz_U/view?usp=sharing"> Getting Started with Git and GitHub
+                        </a><br>
+                        
+
+                       
+                        
+                        </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Add Bootstrap JS and jQuery (required for some Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
